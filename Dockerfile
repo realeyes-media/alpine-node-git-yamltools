@@ -1,3 +1,3 @@
 FROM ironsalsa/alpine-node-git
-RUN npm install yaml-front-matter -g
+RUN apk add --no-cache curl && npm install yaml-front-matter -g
 CMD [ "/bin/ash" ]
