@@ -1,4 +1,4 @@
-FROM ironsalsa/alpine-node-git
+FROM quay.io/realeyes/alpine-node-git:latest
 ENV YQ_VERSION=1.14.1
 RUN apk add --update ca-certificates openssl && update-ca-certificates
 RUN apk add --no-cache curl jq && npm install yaml-front-matter -g
